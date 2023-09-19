@@ -39,6 +39,8 @@ class Program
             loginSuccessful = false;
         }
 
+
+        // if element is found, loginsuccessful becomes true thus prints the message
         if (loginSuccessful)
         {
             Console.WriteLine("Login successful!");
