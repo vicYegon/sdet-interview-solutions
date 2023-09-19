@@ -30,6 +30,8 @@ class Program
            
             IWebElement successElement = driver.FindElement(By.Id("store"));
 
+            driver.Navigate().GoToUrl("file:///C:/Users/vkosg/source/repos/ConsoleApp1/ConsoleApp1/store.html");
+            
             // If element is found, consider the login successful
             loginSuccessful = true;
         }
