@@ -23,19 +23,19 @@ class Program
         IWebElement loginButton = driver.FindElement(By.Id("loginButton"));
         loginButton.Click();
 
-        // Wait for the login process to complete and check for an element that indicates a successful login
+        // Wait for the login process to check for an element that indicates a successful login
         bool loginSuccessful = false;
         try
         {
-            // Replace the following line with a suitable locator for an element that appears after a successful login
-            IWebElement successElement = driver.FindElement(By.Id("dashboard"));
+           
+            IWebElement successElement = driver.FindElement(By.Id("store"));
 
-            // If the element is found, consider the login successful
+            // If element is found, consider the login successful
             loginSuccessful = true;
         }
         catch (NoSuchElementException)
         {
-            // If the element is not found, the login has failed
+            // If element is not found, the login has failed
             loginSuccessful = false;
         }
 
@@ -48,7 +48,7 @@ class Program
             Console.WriteLine("Login failed.");
         }
 
-        // Close the browser
+        
         driver.Quit();
     }
 }
