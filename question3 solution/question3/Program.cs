@@ -34,9 +34,9 @@ class Program
         {
                     // Sample list of products
 
-            new Product { Name = "Product A", Price = 19.99m },
-            new Product { Name = "Product B", Price = 9.99m },
-            new Product { Name = "Product C", Price = 29.99m }
+            new Product { Name = "Product A", Price = 1000 },
+            new Product { Name = "Product B", Price = 501 },
+            new Product { Name = "Product C", Price = 298 }
         };
 
         EcommerceApp ecommerceApp = new EcommerceApp();
@@ -45,14 +45,6 @@ class Program
         List<Product> ascendingSortedProducts = ecommerceApp.SortProductsByPrice(products, ascending: true);
         Console.WriteLine("Ascending Order:");
         foreach (var product in ascendingSortedProducts)
-        {
-            Console.WriteLine($"{product.Name}: {product.Price:C}");
-        }
-
-        // Sort products in descending order of price
-        List<Product> descendingSortedProducts = ecommerceApp.SortProductsByPrice(products, ascending: false);
-        Console.WriteLine("\nDescending Order:");
-        foreach (var product in descendingSortedProducts)
         {
             Console.WriteLine($"{product.Name}: {product.Price:C}");
         }

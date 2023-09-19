@@ -3,8 +3,10 @@ SELECT
     SUM(CASE WHEN task_completed = 1 THEN 1 ELSE 0 END) AS completed_tasks,
     task_assignee,
     COUNT(*) AS tasks_assigned
+
 FROM
     tasks
+
 GROUP BY
     task_assignee;
 
@@ -20,4 +22,5 @@ GROUP BY
 - get the total number of tasks in the db
 - get the total number of task completed in the db
 - get the total number of of tasks assigned for each specific user
- this test will help in future querying without repeating yourself to write the same query over and over*/ 
+ this test will help in future querying without repeating yourself to write the same query over and over
+ */ 
