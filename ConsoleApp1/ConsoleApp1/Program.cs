@@ -45,12 +45,12 @@ class Program
         {
             Console.WriteLine("Login successful!");
         }
+
+        // else login fails
         else
         {
             Console.WriteLine("Login failed.");
         }
 
-        
-        driver.Quit();
     }
 }
