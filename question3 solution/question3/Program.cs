@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
+//product class 
 public class Product
 {
+    // product properties
     public string Name { get; set; }
     public decimal Price { get; set; }
 }
@@ -27,9 +29,11 @@ class Program
 {
     static void Main()
     {
-        // Sample list of products
-        List<Product> products = new List<Product>
+        // product object
+            List<Product> products = new List<Product>
         {
+                    // Sample list of products
+
             new Product { Name = "Product A", Price = 19.99m },
             new Product { Name = "Product B", Price = 9.99m },
             new Product { Name = "Product C", Price = 29.99m }
@@ -54,7 +58,7 @@ class Program
         }
     }
 }
-// would prepare test cases using the the test data representing different prices and names
+// would prepare test cases using the test data (initially written) representing products with different prices and names
 // would then use the sortproductbyprice function to sort test data in either ascending or descending order
 // then i would write assertions to validate whether the test data is sorted as per the condition
 // would then aoutomate the test using test framework such as selenium to make it consistent in other similar test cases
